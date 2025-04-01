@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DP 代码启动</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="night-mode.css" id="night-mode-css" disabled>
+</head>
+
+<body>
+    <h1>DrissionPage 代码启动助手</h1>
+    <button id="toggle-night-mode">夜间模式</button>
+    <div id="home">
+        <p>代码生成助手</p>
+        
+        <div class="yi_hang">
+            ChromePage 模式
+        </div>
+
+        <div class="yi_hang">
+            <span class="label1">指定浏览器路径：</span>
+            <input id="set_browser" placeholder="默认为空是本地谷歌浏览器" v-model="browserPath">
+        </div>
+
+        <div class="yi_hang">
+            <span style="margin-right: 15px;">启动前设置</span>
+            <input type="checkbox" id="wutou" name="checkbox" v-model="是否无头">
+            <label for="check1">无头</label>
+
+            <input type="checkbox" id="jingyin" name="checkbox" v-model="是否静音">
+            <label for="check2">静音</label>
+
+            <input type="checkbox" id="hulue" name="checkbox" v-model="是否忽略证书错误">
+            <label for="check4">忽略证书错误</label>
+
+            <input type="checkbox" id="nojs" name="checkbox" v-model="是否设置UA">
+            <label for="check5">设置UA</label>
+            <select id="ua" v-model="UA" v-show="是否设置UA">
+                <option value="pc">PC</option>
+                <option value="苹果">苹果</option>
+                <option value="安卓">安卓</option>
+            </select>
+        </div>
+
+        <div class="yi_hang">
+            <span class="label1">代理地址</span>
+            <input id="set_proxy" class="input_button1" type="text" placeholder="http://ip:port" v-model="proxy_url">
+        </div>
+
+        <div class="yi_hang">
+            <span class="label1">启动端口</span>
+            <input id="set_port" class="input_button1" type="text" v-model="debug_port">
+        </div>
+
+        <div class="yi_hang">
+            <span class="label1">启动网址</span>
+            <input id="set_url" class="input_button1" type="text" placeholder="必须是http开头" v-model="url">
+        </div>
+
+        <hr>
+
+        <button id="reset_config" class="start_button" type="button" style="background-color: crimson;">重置</button>
+        <button id="copy_code" class="red_button" type="button" @click="copyToClipboard(code)">复制下面的代码</button>
+        <br>
+
+        <textarea id="wenben" rows="20" placeholder="文本框" :value="code" :style="wenben_style"></textarea>
+    </div>
+
+    <!-- //#region js -->
+    <script src="./vue@2.js"></script>    
+    <script src="./main2.js"> </script>
+
+    <script>
+        document.getElementById('toggle-night-mode').addEventListener('click', function () {
+            document.body.classList.toggle('night-mode');
+            const nightModeCSS = document.getElementById('night-mode-css');
+            nightModeCSS.disabled = !nightModeCSS.disabled;
+        });
+    </script>
+</body>
+
+</html>
+    

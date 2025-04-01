@@ -1,0 +1,101 @@
+/* night-mode.css 夜间模式 */
+:root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #3d3d3d;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --accent-color: #4a8fe7;
+    --accent-hover: #3a7bd5;
+    --border-color: #444;
+    --input-bg: #2d2d2d;
+    --textarea-bg: #252525;
+    --button-danger: #d33;
+    --button-danger-hover: #b22;
+  }
+  
+  body.night-mode {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+  
+  .night-mode h1 {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
+  }
+  
+  .night-mode #home {
+    background-color: var(--bg-secondary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .night-mode #home > p {
+    color: var(--accent-color);
+  }
+  
+  .night-mode .yi_hang {
+    background-color: var(--bg-tertiary);
+  }
+  
+  .night-mode input[type="text"],
+  .night-mode .input_button1,
+  .night-mode select {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+  }
+  
+  .night-mode input[type="text"]:focus,
+  .night-mode select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(74, 143, 231, 0.3);
+  }
+  
+  .night-mode #wenben {
+    background-color: var(--textarea-bg);
+    color: #d0d0d0;
+    border-color: var(--border-color);
+  }
+  
+  .night-mode hr {
+    border-color: var(--border-color);
+  }
+  
+  .night-mode .start_button {
+    background-color: var(--accent-color);
+  }
+  
+  .night-mode .start_button:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  .night-mode .red_button {
+    background-color: var(--button-danger);
+  }
+  
+  .night-mode .red_button:hover {
+    background-color: var(--button-danger-hover);
+  }
+  
+  .night-mode input[type="checkbox"] {
+    filter: invert(80%);
+  }
+  
+  /* 暗色滚动条 */
+  .night-mode ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .night-mode ::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+  }
+  
+  .night-mode ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+  }
+  
+  .night-mode ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
