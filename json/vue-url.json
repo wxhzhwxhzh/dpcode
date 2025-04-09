@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "name": "Vue.js.",
+      "url": "https://vuejs.org",
+      "icon": "https://vuejs.org/images/logo.png",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "React",
+      "url": "https://reactjs.org",
+      "icon": "https://reactjs.org/favicon.ico",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "name": "GitHub",
+      "url": "https://github.com",
+      "icon": "https://github.githubassets.com/favicons/favicon.png",
+      "categoryId": 5
+    },
+    {
+      "id": 4,
+      "name": "MDN",
+      "url": "https://developer.mozilla.org",
+      "icon": "https://developer.mozilla.org/favicon.ico",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "name": "MySQL",
+      "url": "https://www.mysql.com",
+      "icon": "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
+      "categoryId": 4
+    },
+    {
+      "id": 6,
+      "name": "MongoDB",
+      "url": "https://www.mongodb.com",
+      "icon": "https://www.mongodb.com/assets/images/global/favicon.ico",
+      "categoryId": 4
+    },
+    {
+      "id": 7,
+      "name": "PostgreSQL",
+      "url": "https://www.postgresql.org",
+      "icon": "https://www.postgresql.org/favicon.ico",
+      "categoryId": 4
+    },
+    {
+      "id": 8,
+      "name": "Stack Overflow",
+      "url": "https://stackoverflow.com",
+      "icon": "https://stackoverflow.com/favicon.ico",
+      "categoryId": 1
+    },
+    {
+      "id": 9,
+      "name": "CSS Tricks",
+      "url": "https://css-tricks.com",
+      "icon": "https://css-tricks.com/favicon.ico",
+      "categoryId": 1
+    },
+    {
+      "id": 10,
+      "name": "骚神网",
+      "url": "https://wxhzhwxhzh.github.io/sao/",
+      "icon": "https://wxhzhwxhzh.github.io/sao/favicon.ico",
+      "categoryId": 6
+    },
+    {
+      "id": 11,
+      "name": "凡人修仙传",
+      "url": "https://www.bilibili.com/bangumi/play/ss28747?spm_id_from=333.337.0.0",
+      "icon": "./img/凡人修仙传.jpg",
+      "categoryId": 6
+    },
+    {
+      "id": 12,
+      "name": "仙逆",
+      "url": "https://v.qq.com/x/cover/mzc00200aaogpgh/x4100hntri9.html",
+      "icon": "./img/仙逆.jpg",
+      "categoryId": 6
+    },
+    {
+      "id": 13,
+      "name": "不良人7",
+      "url": "https://v.qq.com/x/cover/mzc00200s5j9upv/k4100nezibn.html",
+      "icon": "./img/不良人7.jpg",
+      "categoryId": 6
+    },
+    {
+      "id": 14,
+      "name": "豆包",
+      "url": "https://www.doubao.com/chat/",
+      "icon": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/samantha/logo-icon-white-bg.png",
+      "categoryId": 6
+    },
+    {
+      "id": 15,
+      "name": "腾讯元宝",
+      "url": "https://yuanbao.tencent.com/chat/naQivTmsDa",
+      "icon": "https://th.bing.com/th/id/ODLS.abe44381-015e-4f67-b218-5dc8ccd93f1f?w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2",
+      "categoryId": 6
+    },
+    {
+      "id": 16,
+      "name": "DrissionPage",
+      "url": "https://drissionpage.cn/",
+      "icon": "https://drissionpage.cn/img/color_logo.png",
+      "categoryId": 6
+    }
+  ]
+  
