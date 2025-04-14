@@ -6,24 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DP 代码启动</title>
-    <link rel="stylesheet" href="./styles1.css">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
     <link rel="stylesheet" href="night-mode.css" id="night-mode-css" disabled>
+    
+    
 </head>
 
 <body>
     <div id="home0">
-        <h1>DrissionPage 代码启动助手</h1>
+        <h1>DrissionPage 代码启动助手 </h1>
         <button id="toggle-night-mode">夜间模式</button>
-        <button @click="switchHome(vdp2)">{{tab.t2}}</button>    
+        <button @click="switchHome(BrowserTab)">{{tab.t2}}</button>    
         <button @click="switchHome(vdp3)">{{tab.t3}}</button>
         <button @click="switchHome(vdp4)">{{tab.t4}}</button>
     </div>
 
     <div id="home2" v-show="show">
+        <link rel="stylesheet" href="overlay.css" id="mode-css" :v-if="initJs.启用">
         <p>代码生成助手</p>
         
         <div class="yi_hang">
-            ChromePage 模式
+            ChromePage 模式 
         </div>
 
         <div class="yi_hang">
@@ -38,6 +41,11 @@
 
             <input type="checkbox" id="jingyin" name="checkbox" v-model="是否静音">
             <label for="check2">静音</label>
+            <input type="checkbox" name="checkbox" v-model="是否最大化">
+            <label for="check2">最大化</label>
+            <input type="checkbox" name="checkbox" v-model="initJs.启用">
+            <label for="check2">初始化脚本</label>
+            <button v-if="initJs.启用" @click="initJs.显示=true">修改脚本</button>
 
             <input type="checkbox" id="hulue" name="checkbox" v-model="是否忽略证书错误">
             <label for="check4">忽略证书错误</label>
@@ -73,6 +81,7 @@
         <br>
 
         <textarea id="wenben" rows="20" placeholder="文本框" :value="code" :style="wenben_style"></textarea>
+        <overlay-textarea :visible="initJs.显示" @close="handleClose($event)" v-if="initJs.启用"></overlay-textarea>
     </div>
 
     <div id="home3" v-show="show">
@@ -119,10 +128,11 @@
 
     <!-- //#region js -->
     <script src="./vue@2.js"></script>    
-    <script src="./main2.js"> </script>
+    <script src="./v.js"></script>    
+    <!-- <script src="./main2.js"> </script>
     <script src="./main3.js"> </script>
     <script src="./main4.js"> </script>
-    <script src="./main0.js"> </script>
+    <script  src="./main0.js"> </script> -->
 
     <script>
         document.getElementById('toggle-night-mode').addEventListener('click', function () {

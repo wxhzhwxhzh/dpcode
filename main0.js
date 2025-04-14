@@ -1,3 +1,5 @@
+
+
 const config0 = {
     el: '#home0',
     data() {
@@ -17,7 +19,7 @@ const config0 = {
     methods: {
        switchHome(tab) {
           
-          vdp2.show=0;
+          BrowserTab.show=0;
           vdp3.show=0;
           vdp4.show=0;
           tab.show=1; 
@@ -26,4 +28,4 @@ const config0 = {
 }
 
 const vdp0 = new Vue(config0)
-vdp0.switchHome(vdp2);
+vdp0.switchHome(BrowserTab);

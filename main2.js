@@ -3,6 +3,7 @@ const userAgents = {
     android: "Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
     apple: "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
 };
+
 var var1={
     是否整体显示: false,
     show:true,
@@ -17,17 +18,19 @@ var var1={
     是否无头: false,
     是否设置UA: false,
     url:`https://www.baidu.com/`,
-    wenben: `co.set_browser_path(r'${this.browserPath}')`,
+    wenben: `co.set_browser_path(r'')`,
     wenben_style: `width: 95%; padding: 12px; border: 2px solid #4CAF50; border-radius: 4px;
     background-color: #f8f8f8; font-size: 16px; color: #333; resize: vertical;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease;font-family: consolas, 'Courier New', Courier, monospace;
-    font-size:12px;`
+    font-size:12px;`,
+    
 }
 
 const config2 = {
     el: '#home2',
     data() {
-        return var1;
+        return var1,browser;
+       
     },
     methods: {
 
@@ -121,4 +124,4 @@ print(tab.title)
     }
 
 };
-const vdp2 = new Vue(config2)
+ export const vdp2 = new Vue(config2)
