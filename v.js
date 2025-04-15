@@ -4,8 +4,8 @@ var sss=Vue.component('overlay-textarea', {
         <div v-if="visible" class="overlay"  >
             <div class="textarea-container">
                 <h3>请输入 {{placeholder}}</h3>
-                <textarea v-model="text" :placeholder="placeholder"></textarea>
-                <button @click="close">关闭</button>
+                <textarea v-model="text" :placeholder="placeholder" style="width: 80vw; height: 80vh;"></textarea>
+                <button @click="close">保存并关闭</button>
             </div>
         </div>
     `,
